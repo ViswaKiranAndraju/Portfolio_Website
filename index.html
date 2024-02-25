@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viswa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c37daa0c90.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Viswa_Logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- <i class="fas fa-bars"  onclick="openmenu()"></i> -->
+            </nav>
+        </div>
+        
+        <div class="header-text">
+            <div class="header-info">
+                <p>Computer Science Undergrad</p>
+            <h1>Hi, I am <span>Viswa</span> <br> Kiran Andraju</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/viswa.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate Computer Science undergrad with a clear goal of
+                        becoming a Software Engineer, driven by the excitement of
+                        creating user-friendly software to solve real-world problems and fascinated by the boundless potential of Artificial Intelligence, always seeking ways to integrate technologies.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Positon of Responsibility</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development - HTML, CSS, JS, MySQL</span></li>
+                            <li><span>MERN stack - MongoDB, ExpressJS, React, NodeJS </span></li>
+                            <li><span>Database Management System</span></li>
+                            <li><span>Power BI</span></li>
+                            <li><span>Machine Learning</span></li>
+                            <li><span>Deep Learning</span></li>
+                            <li><span>OpenCV</span></li>
+                            <li><span>Math</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Computer Science</span><br>NIT Andhra Pradesh, Tadepalligudem <br>2021-2025 <br>CGPA: 8.46</li>
+                            <li><span>Class XII CBSE</span><br>Narayana Olympiad School, Bangalore
+                            <br>2019-2021 <br>Percentage: 93.2</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Present</span><br>Joint Secretary- Painting and Photography Club</li>
+                            <li><span>2023-Present</span><br>Executive Member - Computer Science and Engineering Association</li>
+                            <li><span>2023-Present</span><br>Content Writer</li>
+                            <li><span>2022-Present</span><br>Photographer</li>
+                            <li><span>2022-Present</span><br>Executive Member - Literary & Debate Club</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------services------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Intelligent Library Management System</h2>
+                    <p style="font-size: 20px;">
+                        HTML, CSS, JavaScript, Node.js, MySQL, OpenCV
+                    </p>    
+                    <a style="font-size: 20px;" href="https://github.com/ViswaKiranAndraju/Intelligent_Library_Management_System">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>                    <h2>IBM HR Employee Attrition Analysis</h2>
+                    <p style="font-size: 20px;">
+                        Python, Power BI, Data Analysis, Machine Learning
+                    </p>
+                    <a style="font-size: 20px;" href="https://github.com/ViswaKiranAndraju/IBM_HR_Employee_Attrition_Analysis">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>Premier League Soccer</h2>
+                    <p style="font-size: 20px;">
+                        Python, Machine Learning
+                    </p>
+                    <a style="font-size: 20px;" href="https://github.com/ViswaKiranAndraju/Premier-League-Soccer">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ------------portfolio------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/img2.jpg" alt="">
+                    <div class="layer">
+                        <h3 style="font-size: 24px;">My Projects</h3>
+                        <p style="font-size: 18px;">The projects, crafted with passion, are available on GitHub. Please explore them by clicking the provided link.</p>
+                        <a href="https://github.com/ViswaKiranAndraju?tab=repositories"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pen.jpg" alt="">
+                    <div class="layer">
+                        <h3 style="font-size: 24px;">Writing</h3>
+                        <p style="font-size: 18px;">My blog features articles authored by me on the subject of <span style=" font-weight: 900;">machine learning</span>. Feel free to explore them.</p>
+                        <a href="https://medium.com/@vk.viswa"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <br>
+                        <p style="font-size: 18px;">My another blog showcases my<span style=" font-weight: 900;"> fiction writing</span> pieces. Discover and enjoy the stories by visiting the provided link.</p>
+                        <a href="https://medium.com/@aviswakiran"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/camera.webp" alt="">
+                    <div class="layer">
+                        <h3 style="font-size: 24px;">Photography</h3>
+                        <p style="font-size: 18px;">As a passionate photographer, I invite you to explore my portfolio on Instagram.</p>
+                        <a href="https://www.instagram.com/viswa.photo/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------contact------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aviswakiran@gmail.com</p>
+                    <!-- <p><i class="fa-solid fa-phone"></i>0123456789</p> -->
+                    <div class="social-icons">
+                        <a href="https://medium.com/@aviswakiran"><i class="fa-brands fa-medium"></i></a>
+                        <a href="https://github.com/ViswaKiranAndraju?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/viswa.photo/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/viswa-kiran-andraju/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./Viswa's_Resume.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Viswa. Made with <i class="fa-solid fa-heart"> </i> by Viswa</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu= document.getElementById("#sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+
+    </script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-lVhBoG2_rHGlMUoT9LdbyjgCLqRJ3TWCkdCwv9I1_UZE15RtUt2N62-mb7FpoUQj/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
